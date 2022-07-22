@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,12 +15,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PageController::class, 'home'])
+->name('home');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/about-us', [PageController::class, 'about'])
+->name('about');
+
+Route::post('/contact-us', [PageController::class, 'contact'])
+->name('contact');
+
+Route::get('/products', [PageController::class, 'products'])
+->name('products');
+
+Route::get('/cart', [PageController::class, 'cart'])
+->name('cart');
 
 require __DIR__.'/auth.php';
