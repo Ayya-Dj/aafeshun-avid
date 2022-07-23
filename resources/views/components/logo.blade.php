@@ -1,0 +1,1 @@
+<img src="{{asset('img/af-logo.png')}}" class="cursor-pointer h-10 w-10 {{$class ?? ""}}">

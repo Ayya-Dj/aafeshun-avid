@@ -3,6 +3,7 @@
   --af-dark-grey: #2b2d42;
   --af-grey: #8d99ae;
   --af-white: #edf2f4;
+  --af-pure-white: #ffffff;
 
   /* Red */
   --af-red: #ef233c;
@@ -25,11 +26,22 @@
   color: var(--af-white);
 }
 
+.af-pure-white {
+  color: var(--af-pure-white);
+}
+
+.af-black {
+  color: var(--af-black);
+}
+
+.af-grey {
+  color: var(--af-grey);
+}
+
 .af-nav-button {
   width: 3rem;
   height: 3rem;
   position: absolute;
-  display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.8s ease-in-out;
@@ -91,7 +103,7 @@
   transition: all 1.5s ease-in-out;
 }
 
-.af-nav-bg.open .af-nav-inner{
+.af-nav-bg.open .af-nav-inner, .af-cart-bg.open .af-cart-inner{
   opacity: 1;
 }
 
