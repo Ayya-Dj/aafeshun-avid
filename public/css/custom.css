@@ -62,25 +62,31 @@
 }
 
 .af-nav-button.open .af-nav-burger::before {
-  transform:  rotate(-45deg) translate(0.5rem, 0.5rem) scale(0.8);
-}
-
-.af-nav-button.open .af-nav-burger::after {
   transform:  rotate(45deg) translate(0.5rem, -0.5rem) scale(0.8);
 }
 
+.af-nav-button.open .af-nav-burger::after {
+  transform:  rotate(-45deg) translate(0.5rem, 0.5rem) scale(0.8);
+}
+
 .af-nav-bg {
+  background-color: var(--af-dark-grey);
+  transform: translate(-100%);
+  transition: all 0.8s ease-in-out;
+}
+
+.af-cart-bg {
   background-color: var(--af-dark-grey);
   transform: translate(100%);
   transition: all 0.8s ease-in-out;
 }
 
-.af-nav-bg.open {
+.af-nav-bg.open, .af-cart-bg.open {
   transform: translate(0%);
   opacity: 1;
 }
 
-.af-nav-inner {
+.af-nav-inner, .af-cart-inner {
   opacity: 0;
   transition: all 1.5s ease-in-out;
 }
