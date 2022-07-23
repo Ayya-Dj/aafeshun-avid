@@ -14,6 +14,7 @@
   --af-dark-green: #008000;
 
   /* Blue */
+  --af-teal: #2dd4bf;
   --af-blue: #00b4d8;
   --af-dark-blue: #0077b6;
 }
@@ -115,4 +116,70 @@
 .af-nav-social-media:hover {
   transform: translate(-100%) scale(1.25);
   transition: all 0.3s ease-in-out;
+}
+
+.af-cart-items-container {
+  overflow-y: scroll;
+  max-height: 60vh;
+  border-radius: 0.5rem;
+  box-shadow: 2rem;
+}
+
+.af-width-cart {
+  width: 500px;
+}
+
+.af-link-default{
+  color: var(--af-white);
+}
+
+.af-link-default:hover{
+  color: var(--af-teal);
+}
+
+.af-link-active {
+  color: var(--af-teal);
+  border-bottom: solid var(--af-teal);
+}
+
+.af-link-active:hover {
+  color: var(--af-white);
+}
+
+.af-button {
+  background-color: var(--af-teal);
+  color: var(--af-black);
+  border-radius: 0.25rem;
+  box-shadow: 2rem;
+  padding: 1.25rem;
+}
+
+.af-img-fit {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: teal;
+  border-radius: 0.25rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .af-cart-items-container {
+    max-height: 50vh;
+  }
+
+  .af-width-cart {
+    width: 300px;
+  }
+
 }

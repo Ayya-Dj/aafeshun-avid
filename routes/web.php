@@ -18,6 +18,9 @@ use App\Http\Controllers\PageController;
 Route::get('/', [PageController::class, 'home'])
 ->name('home');
 
+Route::get('/gallery', [PageController::class, 'gallery'])
+->name('gallery');
+
 Route::get('/about-us', [PageController::class, 'about'])
 ->name('about');
 
@@ -26,6 +29,9 @@ Route::post('/contact-us', [PageController::class, 'contact'])
 
 Route::get('/products', [PageController::class, 'products'])
 ->name('products');
+
+Route::get('/products/{name}', [PageController::class, 'individual_product'])
+->name('products.individual');
 
 Route::get('/cart', [PageController::class, 'cart'])
 ->name('cart');
