@@ -9,34 +9,13 @@
 			background-repeat: no-repeat;
 			background-image: url({{asset('img/about.jpeg')}});
 		}
-
-		input.no-outline:focus {
-			outline:none !important;
-			outline-width: 0 !important;
-			box-shadow: none;
-			-moz-box-shadow: none;
-			-webkit-box-shadow: none;
-		}
-
-		input.no-outline {
-			background-color: var(--af-dark-grey);
-			color: var(--af-pure-white);
-		}
-
-		textarea.af-text-area {
-			background-color: var(--af-dark-grey);
-			color: var(--af-pure-white);
-			resize: none;
-			padding-left: 0.5rem;
-			padding-right: 0.5rem;
-		}
-
+		
 		.h-640 {
 			height: 640px;
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-image: url({{asset('img/backgrounds/slider-3.jpg')}});
+			background-image: url({{asset('img/about-bg.jpg')}});
 		}
 	</style>
 	<div class="w-full flex flex-wrap">

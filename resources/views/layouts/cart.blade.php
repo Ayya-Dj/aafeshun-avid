@@ -1,4 +1,4 @@
-<div class="af-cart-bg af-width-cart min-h-screen absolute right-1 top-1 lg:-m-7 md:-m-8 -mx-10 -my-8 opacity-20 z-10" :class="{'open': cart, 'closed': ! cart}">
+<div class="af-cart-bg af-width-cart min-h-screen absolute right-1 top-1 lg:-m-7 md:-m-8 -mx-10 -my-8 opacity-20 z-10 " :class="{'open': cart, 'closed': ! cart}">
     <div class="max-w-7xl mx-auto lg:py-10 md:py-6 px-5 py-8 flex flex-wrap af-cart-inner">
 
         <div class="w-full flex flex-wrap min-h-screen place-content-start">

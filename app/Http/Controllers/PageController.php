@@ -34,8 +34,12 @@ class PageController extends Controller
     }
 
     public function gallery() {
+        $products   =   Helper::toArray(
+                            DB::table('products')
+                            ->get()
+                        );
         return view('gallery',[
-            
+            'products' => $products,
         ]);
     }
 }

@@ -168,6 +168,41 @@
   background-color: var(--af-black);
 }
 
+input.no-outline:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+input.no-outline {
+  background-color: var(--af-dark-grey);
+  color: var(--af-pure-white);
+}
+
+textarea.af-text-area {
+  background-color: var(--af-dark-grey);
+  color: var(--af-pure-white);
+  resize: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.af-gallery-image {
+  height: 600px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel {
+  z-index: 0;
+}
+
 ::-webkit-scrollbar {
   width: 0.25rem;
 }

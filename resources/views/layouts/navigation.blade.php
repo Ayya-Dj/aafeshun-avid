@@ -1,5 +1,5 @@
 <nav x-data="{ open: false, cart: false }" class="af-text fixed top-1 right-1 lg:m-5 md:m-6 mx-8 my-6 w-screen">
-    <div @click="open = ! open" class="af-nav-button cursor-pointer z-40 absolute left-1 ml-16 flex md:hidden" :class="{'open': open, 'closed': ! open}">
+    <div @click="open = ! open" class="af-nav-button cursor-pointer z-50 absolute left-1 ml-16 flex md:hidden" :class="{'open': open, 'closed': ! open}">
         <div class="af-nav-burger"></div>
     </div>
     <div @click="cart = ! cart" class="af-cart-button cursor-pointer z-20 absolute right-1" :class="{'open': cart, 'closed': ! cart}">
