@@ -18,15 +18,21 @@ class Products extends Seeder
         DB::table('products')->insert([
             [
                 'name'          => 'Construction Hat',
-                'description'   => 'Lorem ipsum dolor sit amet',
+                'description'   => 'Safety equipment used on construction site.',
                 'image'         => 'hat.jpg',
-                'price'         => 12.22,
+                'price'         => 60.20,
             ],
             [
-                'name'          => 'Not Hat',
-                'description'   => 'Lorem ipsum dolor sit amet',
-                'image'         => '2.jpg',
-                'price'         => 12.22,
+                'name'          => 'Plywood',
+                'description'   => 'Plywood 4x10',
+                'image'         => 'plywood.jpg',
+                'price'         => 140.00,
+            ],
+            [
+                'name'          => 'Tape Measure',
+                'description'   => 'Industrial grade tape measure',
+                'image'         => 'tape-measure.jpg',
+                'price'         => 100.00,
             ],
         ]);
     }

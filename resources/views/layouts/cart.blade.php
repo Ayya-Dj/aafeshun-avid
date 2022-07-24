@@ -10,15 +10,15 @@
             </div>
             <div class="w-full flex flex-wrap af-cart-items-container my-5">
                 @foreach( $cart as $product )
-                	<div class="w-full flex flex-wrap md:h-32 h-20 rounded-lg shadow-lg bg-base-200 mb-2 relative overflow-hidden">
-                		<div class="w-1/3 bg-white text-black text-center af-img-fit md:h-32 h-20" style="background-image: url({{asset('img/products/'.$product['image'])}});">
+                	<div class="w-full flex flex-wrap h-32 rounded-lg shadow-lg bg-base-200 mb-2 relative overflow-hidden">
+                		<div class="w-1/3 bg-white text-black text-center af-img-fit h-32" style="background-image: url({{asset('img/products/'.$product['image'])}});">
                 		</div>
                 		<div class="w-2/3 p-5 -mt-3">
                             <div class="w-full truncate">
                                 {{$product['name']}}
                             </div>
-                			<div class="w-full">
-                                Qty: {{$product['quantity']}}
+                			<div class="w-full flex">
+                                <span class="w-auto my-auto">Qty:</span> <input type="number" class="af-cart-quantity w-20" name="qty" value="{{$product['quantity']}}">
                             </div>
                             <div class="w-full">
                                 Price: {{$product['price']}}
@@ -28,6 +28,7 @@
                 	</div>
                 @endforeach
             </div>
+            <hr class="border-b border-gray-100 w-full my-10">
             <div class="w-full flex flex-wrap af-cart-items-price text-right">
                 <div class="w-full flex">
                     <div class="md:w-9/12 w-1/2">
@@ -45,12 +46,13 @@
                         {{round($total*0.06, 2)}}
                     </div>
                 </div>
-                <div class="w-full flex">
+
+                <div class="w-full flex my-2">
                     <div class="md:w-9/12 w-1/2">
-                        Total
+                        <b>Total</b>
                     </div>
                     <div class="md:w-3/12 w-1/2" id="total">
-                        {{round($total + ($total*0.06), 2)}}
+                        <b>{{round($total + ($total*0.06), 2)}}</b>
                     </div>
                 </div>
                 <div class="w-full flex mt-5">

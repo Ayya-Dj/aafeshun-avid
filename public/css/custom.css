@@ -1,5 +1,5 @@
 :root {
-  --af-black: #070014;
+  --af-black: #12111e;
   --af-dark-grey: #2b2d42;
   --af-grey: #8d99ae;
   --af-white: #edf2f4;
@@ -21,6 +21,10 @@
 
 .af-bg {
   background-color: var(--af-black);
+}
+
+.af-bg-grey {
+  background-color: var(--af-dark-grey);
 }
 
 .af-text {
@@ -89,7 +93,7 @@
 }
 
 .af-cart-bg {
-  background-color: var(--af-dark-grey);
+  background: linear-gradient(0deg, rgba(4,2,17,1) 0%, rgba(5,2,20,1) 35%, rgba(0,23,61,1) 100%);
   transform: translate(100%);
   transition: all 0.8s ease-in-out;
 }
@@ -158,6 +162,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.af-cart-quantity {
+  background-color: var(--af-black);
 }
 
 ::-webkit-scrollbar {
