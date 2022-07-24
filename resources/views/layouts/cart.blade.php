@@ -9,16 +9,16 @@
                 My Cart
             </div>
             <div class="w-full flex flex-wrap af-cart-items-container my-5">
-                @foreach( $products as $product )
+                @foreach( $cart as $product )
                 	<div class="w-full flex flex-wrap md:h-32 h-20 rounded-lg shadow-lg bg-base-200 mb-2 relative overflow-hidden">
-                		<div class="w-1/3 bg-white text-black text-center af-img-fit md:h-32 h-20" style="background-image: url({{asset('img/products/'.$product['img'])}});">
+                		<div class="w-1/3 bg-white text-black text-center af-img-fit md:h-32 h-20" style="background-image: url({{asset('img/products/'.$product['image'])}});">
                 		</div>
                 		<div class="w-2/3 p-5 -mt-3">
                             <div class="w-full truncate">
                                 {{$product['name']}}
                             </div>
                 			<div class="w-full">
-                                Qty: {{$product['qty']}}
+                                Qty: {{$product['quantity']}}
                             </div>
                             <div class="w-full">
                                 Price: {{$product['price']}}
@@ -26,9 +26,6 @@
                 		</div>
                         <span class="bg-red-500 af-white rounded-full px-2 right-1 top-1 absolute cursor-pointer">x</span>
                 	</div>
-                    @php
-                    $total+= $product['qty'] * $product['price'];
-                    @endphp
                 @endforeach
             </div>
             <div class="w-full flex flex-wrap af-cart-items-price text-right">

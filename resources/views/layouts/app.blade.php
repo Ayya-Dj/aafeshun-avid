@@ -21,31 +21,6 @@
         <script src="{{ asset('js/spinner.js') }}"></script>
     </head>
     <body class="font-sans antialiased">
-
-        @php
-            /*
-                Products would usually be taken from a database
-            */
-            $products = array(
-                [
-                    'name'  => 'Hat',
-                    'img'   => '1.jpg',
-                    'desc'  => 'Lorem ipsum dolor sit amet',
-                    'qty'   => 12, 
-                    'price' => 12.22,
-                ],
-                [
-                    'name'  => 'Not Hat',
-                    'img'   => '2.jpg',
-                    'desc'  => 'Lorem ipsum dolor sit amet',
-                    'qty'   => 12, 
-                    'price' => 12.22,
-                ],
-            );
-
-            $total = 0;
-        @endphp
-
         <!-- Spinner initializes before all content -->
         {{--@include('layouts.spinner')--}}
         <div class="min-h-screen af-bg">

@@ -18,14 +18,24 @@ class PageController extends Controller
     }
 
     public function products() {
-        return view('products');
+        $products   =   Helper::toArray(
+                            DB::table('products')
+                            ->get()
+                        );
+        return view('products',[
+            'products' => $products,
+        ]);
     }
 
     public function about() {
-        return view('about');
+        return view('about',[
+            
+        ]);
     }
 
     public function gallery() {
-        return view('gallery');
+        return view('gallery',[
+            
+        ]);
     }
 }
