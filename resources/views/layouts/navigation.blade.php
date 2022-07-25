@@ -3,7 +3,7 @@
         <div class="af-nav-burger"></div>
     </div>
     <div @click="cart = ! cart" class="af-cart-button cursor-pointer z-20 absolute right-1" :class="{'open': cart, 'closed': ! cart}">
-        <div class="my-3 indicator"><span class="indicator-item indicator-top badge badge-accent" id="cart-item-count">10</span><x-cart-icon :height=2 :width=2></x-cart-icon></div>
+        <div class="my-3 indicator"><span class="indicator-item indicator-top badge badge-accent" id="cart-item-count">2</span><x-cart-icon :height=2 :width=2></x-cart-icon></div>
     </div>
     <div class="cursor-pointer z-10 fixed right-1 bottom-1 md:inline hidden">
         <div class="af-nav-social-media my-10 text-blue-400"><x-sm-twitter-ol :height=2 :width=2></x-sm-twitter-ol></div>
