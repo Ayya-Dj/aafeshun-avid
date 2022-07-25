@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        @yield('meta')
 
         <title>{{ config('app.name', 'Aafeshun') }}</title>
 
@@ -15,12 +16,14 @@
         <link rel="stylesheet" href="{{ asset('css/daisyui.css') }}">
         <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+        @yield('custom-styles')
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="{{ asset('js/jquery.min.js') }}"></script>
         <script src="{{ asset('js/spinner.js') }}"></script>
         <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+        @yield('custom-scripts')
     </head>
     <body class="font-sans antialiased">
         <!-- Spinner initializes before all content -->

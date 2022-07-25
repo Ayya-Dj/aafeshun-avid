@@ -1,4 +1,37 @@
 <x-app-layout>
+	@section('meta')
+    	<title>Gallery - {{ config('app.name', 'Aafeshun') }}</title>
+    @endsection
+
+    @section('custom-scripts')
+		{{-- This js is here because it only affects this page and it will be easier to modify the js within the page --}}
+		<script type="text/javascript">
+		    $(document).ready(function() {
+		        setTimeout(function() {
+		            $('.af-gallery').owlCarousel({
+		                loop:true,
+		                nav:false,
+		                dots:false,
+		                autoplay:false,
+		                autoWidth:false,
+		                responsiveClass:true,
+		                responsive:{
+		                    0:{
+		                        items:1,
+		                    },
+		                    900:{
+		                        items:2,
+		                    },
+		                    1350:{
+		                        items:3,
+		                    }
+		                }
+		            });
+		        }, 10);
+		    });     
+		</script>
+	@endsection
+
 	<div class="w-full text-4xl text-center mb-5 sm:px-20 px-8 pt-28">
 		Products Gallery
 	</div>
@@ -13,30 +46,5 @@
 			</div>
 		</div>
 	</div>
-		
-	<script type="text/javascript">
-	    $(document).ready(function() {
-	        setTimeout(function() {
-	            $('.af-gallery').owlCarousel({
-	                loop:true,
-	                nav:false,
-	                dots:false,
-	                autoplay:false,
-	                autoWidth:false,
-	                responsiveClass:true,
-	                responsive:{
-	                    0:{
-	                        items:1,
-	                    },
-	                    900:{
-	                        items:2,
-	                    },
-	                    1350:{
-	                        items:3,
-	                    }
-	                }
-	            });
-	        }, 10);
-	    });     
-	</script>
+
 </x-app-layout>

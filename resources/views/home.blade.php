@@ -1,6 +1,11 @@
 <x-app-layout>
+	@section('meta')
+    <title>{{ config('app.name', 'Aafeshun') }}</title>
+    @endsection
+
+    @section('custom-styles')
 	<style type="text/css">
-		/* This css is here because it only affects this page */
+		{{-- This css is here because it only affects this page and it requires an asset --}}
         .af-partners {
             height: 500px;
             background-position: center;
@@ -10,6 +15,8 @@
             background-repeat: no-repeat;
         }
     </style>
+    @endsection
+    
 	<div class="flex flex-wrap min-h-screen place-content-start">
 		<div class="hero min-h-screen w-full flex flex-wrap" style="background-image: url(https://placeimg.com/1920/1080/arch);">
 			<div class="hero-overlay bg-opacity-60"></div>
