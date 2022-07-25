@@ -1,3 +1,4 @@
+/* Custom color values for the most part */
 :root {
   --af-black: #12111e;
   --af-dark-grey: #2b2d42;
@@ -50,7 +51,6 @@
   justify-content: center;
   align-items: center;
   transition: all 0.8s ease-in-out;
-  /* border: 3px solid #fff; */
 }
 
 .af-nav-burger {
@@ -70,6 +70,7 @@
   border-radius: 5px;
 }
 
+/* Changes the hamburger to a cross and viceversa */
 .af-nav-burger::before {
   transform: translateY(-7px);
 }
@@ -158,6 +159,7 @@
   padding: 1.25rem;
 }
 
+/* Works well to show the entire image and not warp dimensions */
 .af-img-fit {
   background-position: center;
   background-repeat: no-repeat;
@@ -168,6 +170,7 @@
   background-color: var(--af-black);
 }
 
+/* Contact form fields */
 input.no-outline:focus {
   outline:none !important;
   outline-width: 0 !important;
@@ -207,10 +210,12 @@ textarea.af-text-area {
   position: relative;
 }
 
+/* Was infront of the shop and nav divs */
 .owl-carousel {
   z-index: 0;
 }
 
+/* Scroll bar */
 ::-webkit-scrollbar {
   width: 0.25rem;
 }
@@ -224,6 +229,7 @@ textarea.af-text-area {
   border-radius: 0.25rem;
 }
 
+/* Changing cart div width according to screen size */
 @media only screen and (max-width: 770px) {
   .af-cart-items-container {
     max-height: 50vh;
