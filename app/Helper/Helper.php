@@ -27,4 +27,19 @@ class Helper
 		}
 	}
 
+	public static function msg() {
+		if ( session()->get( 'msg' ) !== NULL ) {
+        	echo'
+        	<input type="checkbox" id="my-modal-4" class="modal-toggle" checked />
+			<label for="my-modal-4" class="modal cursor-pointer">
+				<label class="modal-box relative alert-success" for="">
+					<h3 class="text-lg font-bold">Thank you for contacting us!</h3>
+					<p class="py-4">Your message has been received and one of our staff will be in contact with you shortly.</p>
+					<p class="py-4">Click anywhere outside this box to close the message.</p>
+				</label>
+			</label>
+        	';
+		}
+	}
+
 }

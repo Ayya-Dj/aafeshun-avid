@@ -29,9 +29,7 @@ class PageController extends Controller
     }
 
     public function about() {
-        return view('about',[
-            
-        ]);
+        return view('about');
     }
 
     public function gallery() {
@@ -43,5 +41,9 @@ class PageController extends Controller
         return view('gallery',[
             'products' => $products,
         ]);
+    }
+
+    public function contact() {
+        return redirect('about-us')->with('msg',"Received");
     }
 }

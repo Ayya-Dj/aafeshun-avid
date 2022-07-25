@@ -27,14 +27,15 @@
 	@section('custom-scripts')
 		{{-- This js is here because it only affects this page and it will be easier to modify the js within the page --}}
 		<script type="text/javascript">
-			$("#message").keyup(function(){
-				$("#count").text($(this).val().length);
-			});
+			$(document).ready(function() {
+				$("#message").keyup(function(){
+					$("#count").text($(this).val().length);
+				});
 
-			$("#message").keydown(function(){
-				$("#count").text($(this).val().length);
+				$("#message").keydown(function(){
+					$("#count").text($(this).val().length);
+				});
 			});
-
 		</script>
 
 		<script>
@@ -71,6 +72,7 @@
 				</div>
 			</div>
 		</div>
+		{{ App\Helper\Helper::msg()}}
 		<div class="w-full flex flex-wrap py-20">
 			<div class="w-full flex flex-wrap">
 				<div class="max-w-4xl w-full text-center mx-auto p-5 text-xl">
