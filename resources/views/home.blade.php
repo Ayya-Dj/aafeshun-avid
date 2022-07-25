@@ -1,5 +1,6 @@
 <x-app-layout>
 	<style type="text/css">
+		/* This css is here because it only affects this page */
         .af-partners {
             height: 500px;
             background-position: center;

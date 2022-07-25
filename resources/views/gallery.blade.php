@@ -1,5 +1,8 @@
 <x-app-layout>
-	<div class="w-full py-40 flex flex-wrap">
+	<div class="w-full text-4xl text-center mb-5 sm:px-20 px-8 pt-28">
+		Products Gallery
+	</div>
+	<div class="w-full py-20 flex flex-wrap">
 		<div class="w-full flex flex-wrap">
 			<div class="owl-carousel owl-theme af-gallery">
 				@foreach($products as $product)
