@@ -3,9 +3,8 @@
 		<div class="w-full text-4xl text-center mb-5">
 			Products
 		</div>
-		@for($i=0;$i<10;$i++)
 		@foreach($products as $product)
-			<div class="lg:w-1/3 sm:w-1/2 w-full my-2 mx-auto">
+			<div class="lg:w-1/3 sm:w-1/2 w-full my-2">
 				<div class="bg-base-100 shadow-xl sm:m-4 overflow-hidden rounded-2xl">
 					<div class="af-img-fit h-40 bg-white" style="background-image: url({{asset('img/products/'.$product['image'])}});"></div>
 					<div class="card-body">
@@ -16,10 +15,8 @@
 							<button class="btn btn-accent">Add to Cart</button>
 						</div>
 					</div>
-				</div>
-					
+				</div>	
 			</div>
 		@endforeach
-		@endfor
 	</div>
 </x-app-layout>

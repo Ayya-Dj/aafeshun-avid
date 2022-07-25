@@ -20,6 +20,7 @@ class PageController extends Controller
     public function products() {
         $products   =   Helper::toArray(
                             DB::table('products')
+                            ->orderBy('name', 'asc')
                             ->get()
                         );
         return view('products',[
@@ -36,6 +37,7 @@ class PageController extends Controller
     public function gallery() {
         $products   =   Helper::toArray(
                             DB::table('products')
+                            ->orderBy('name', 'asc')
                             ->get()
                         );
         return view('gallery',[
