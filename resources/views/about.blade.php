@@ -20,7 +20,7 @@
 	</style>
 	<div class="w-full flex flex-wrap">
 		<div class="about-top-bg w-full flex af-bg">
-			<div class="text-white mx-auto my-auto font-extrabold text-4xl">
+			<div class="mx-auto my-auto text-4xl">
 				About Us
 			</div>
 		</div>
