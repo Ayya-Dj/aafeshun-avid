@@ -29,11 +29,3 @@ Route::post('/contact-us', [PageController::class, 'contact'])
 
 Route::get('/products', [PageController::class, 'products'])
 ->name('products');
-
-Route::get('/products/{name}', [PageController::class, 'individual_product'])
-->name('products.individual');
-
-Route::get('/cart', [PageController::class, 'cart'])
-->name('cart');
-
-require __DIR__.'/auth.php';
