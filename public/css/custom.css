@@ -199,6 +199,14 @@ textarea.af-text-area {
   z-index: 1;
 }
 
+.af-partner-logo {
+  height: auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .owl-carousel {
   z-index: 0;
 }
