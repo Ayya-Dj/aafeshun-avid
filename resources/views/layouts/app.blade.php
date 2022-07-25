@@ -27,7 +27,7 @@
     </head>
     <body class="font-sans antialiased">
         <!-- Spinner initializes before all content -->
-        {{--@include('layouts.spinner')--}}
+        @include('layouts.spinner')
         <div class="min-h-screen af-bg">
             <!-- Page Content -->
             <main>

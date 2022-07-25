@@ -1,24 +1,25 @@
 <x-app-layout>
 	@section('meta')
-    <title>{{ config('app.name', 'Aafeshun') }}</title>
+    	<title>{{ config('app.name', 'Aafeshun') }}</title>
     @endsection
 
     @section('custom-styles')
-	<style type="text/css">
-		{{-- This css is here because it only affects this page and it requires an asset --}}
-        .af-partners {
-            height: 500px;
-            background-position: center;
-            background-size: cover !important;
-            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url({{asset('img/partner-banner.jpg')}});
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-        }
-    </style>
+		<style type="text/css">
+			{{-- This css is here because it only affects this page and it requires an asset --}}
+	        .af-partners {
+	            height: 500px;
+	            background-position: center;
+	            background-size: cover !important;
+	            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url({{asset('img/partner-banner.jpg')}});
+	            background-attachment: fixed;
+	            background-repeat: no-repeat;
+	        }
+	    </style>
     @endsection
     
 	<div class="flex flex-wrap min-h-screen place-content-start">
-		<div class="hero min-h-screen w-full flex flex-wrap" style="background-image: url(https://placeimg.com/1920/1080/arch);">
+		{{-- This background is a random image thats taken from the site placeimg --}}
+		<div class="hero min-h-screen w-full flex flex-wrap" style="background-image: url(https://placeimg.com/1000/800/arch);">
 			<div class="hero-overlay bg-opacity-60"></div>
 				<div class="text-center text-neutral-content" >
 					<div class="px-5" >

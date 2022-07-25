@@ -72,6 +72,7 @@
 				</div>
 			</div>
 		</div>
+		{{-- This here is looking for a session variable names msg, and will trigger a modal with the received message when its present --}}
 		{{ App\Helper\Helper::msg()}}
 		<div class="w-full flex flex-wrap py-20">
 			<div class="w-full flex flex-wrap">
