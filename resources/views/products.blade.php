@@ -3,7 +3,7 @@
     <title>Products - {{ config('app.name', 'Aafeshun') }}</title>
     @endsection
 
-	<div class="max-w-7xl mx-auto py-20 flex flex-wrap min-h-screen place-content-start sm:px-20 px-8">
+	<div class="max-w-7xl mx-auto py-28 flex flex-wrap min-h-screen place-content-start sm:px-20 px-8">
 		<div class="w-full text-4xl text-center mb-5">
 			Products
 		</div>
